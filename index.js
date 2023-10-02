@@ -1,6 +1,13 @@
 
 
-
+ var form = document.getElementById("formId");
+    var opTag = document.getElementById("opTag");
+    function submitForm(event) {
+       event.preventDefault();
+       form.style.display = "none";
+       opTag.innerHTML = "<b>Thanks for subscribing</b>";
+    }
+    form.addEventListener('submit', submitForm);
 
 
 filterSelection("all") // Execute the function and show all columns
